@@ -33,6 +33,22 @@ func trappingRainDP(height []int) (ans int) {
 	return
 }
 
-func trappingRainTwoPointers(height []int) int {
-
+func trappingRainTwoPointers(height []int) (ans int) {
+	length := len(height)
+	if length == 0 {
+		return
+	}
+	left, right, leftMax, rightMax := 0, length-1, height[0], height[length-1]
+	for left < right {
+		leftMax = max(leftMax, height[left])
+		rightMax = max(rightMax, height[right])
+		if leftMax < rightMax {
+			ans += leftMax - height[left]
+			left++
+		} else {
+			ans += rightMax - height[right]
+			right++
+		}
+	}
+	return
 }

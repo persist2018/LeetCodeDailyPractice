@@ -21,5 +21,9 @@ func main() {
 	// fmt.Println(searchRotatedArray(nums, 0))
 
 	//Test combinationSum
-	fmt.Println(combinationSum(nums, 7))
+	// fmt.Println(combinationSum(nums, 7))
+
+	// Test rain water
+	fmt.Println(trappingRainDP(nums))
+	fmt.Println(trappingRainTwoPointers(nums))
 }
