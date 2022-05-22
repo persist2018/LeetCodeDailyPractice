@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	nums := []int{0, 1, 2, 3}
 	// fmt.Print("hello world")
 
 	// Test letterCombinations
@@ -17,6 +18,8 @@ func main() {
 	// fmt.Println(longestValidParentheses("())(())"))
 
 	//Test searchRotatedArray
-	nums := []int{0, 1, 2, 3}
-	fmt.Println(searchRotatedArray(nums, 0))
+	// fmt.Println(searchRotatedArray(nums, 0))
+
+	//Test combinationSum
+	fmt.Println(combinationSum(nums, 7))
 }
