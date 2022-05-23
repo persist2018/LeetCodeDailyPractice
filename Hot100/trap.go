@@ -47,7 +47,7 @@ func trappingRainTwoPointers(height []int) (ans int) {
 			left++
 		} else {
 			ans += rightMax - height[right]
-			right++
+			right--
 		}
 	}
 	return
