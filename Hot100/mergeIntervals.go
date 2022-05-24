@@ -2,7 +2,7 @@ package main
 
 import "sort"
 
-func merge(intervals [][]int) [][]int {
+func mergeIntervals(intervals [][]int) [][]int {
 	sort.Slice(intervals, func(i, j int) bool {
 		return intervals[i][0] < intervals[j][0]
 	})
@@ -20,13 +20,6 @@ func merge(intervals [][]int) [][]int {
 	}
 	res = append(res, prev)
 	return res
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
 }
 
 func mergeTwoIntervals(interval1, interval2 []int) [][]int {
@@ -48,4 +41,5 @@ func mergeTwoIntervals(interval1, interval2 []int) [][]int {
 	if intervalB[1] < intervalA[1] {
 		return [][]int{intervalA}
 	}
+	return [][]int{intervalA}
 }
