@@ -25,3 +25,15 @@ func min(a, b int) int {
 	}
 	return a
 }
+func minThree(a, b, c int) int {
+	temp := 0
+	if a > b {
+		temp = b
+	} else {
+		temp = a
+	}
+	if c > temp {
+		return temp
+	}
+	return c
+}
