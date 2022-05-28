@@ -28,5 +28,7 @@ func main() {
 	// fmt.Println(trappingRainTwoPointers(nums))
 
 	// Test uniquePaths by combination equation
-	fmt.Println(uniquePaths(23, 12))
+	// fmt.Println(uniquePaths(23, 12))
+
+	fmt.Println(minWindow("ADOBECODEBANC", "ABC"))
 }
