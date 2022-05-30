@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// nums := []int{0, 1, 2, 3}
+	nums := []int{1, 2, 3}
 	// fmt.Print("hello world")
 
 	// Test letterCombinations
@@ -30,5 +30,7 @@ func main() {
 	// Test uniquePaths by combination equation
 	// fmt.Println(uniquePaths(23, 12))
 
-	fmt.Println(minWindow("ADOBECODEBANC", "ABC"))
+	// fmt.Println(minWindow("ADOBECODEBANC", "ABC"))
+
+	fmt.Println(subsets(nums))
 }
