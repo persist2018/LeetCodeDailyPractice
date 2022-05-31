@@ -1,5 +1,6 @@
 package main
 
+// https://leetcode.cn/problems/longest-consecutive-sequence/
 func longestConsecutive(nums []int) int {
 	numMap := map[int]bool{}
 	longest := 0
