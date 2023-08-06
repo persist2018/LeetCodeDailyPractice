@@ -2,8 +2,6 @@ package main
 
 func longestPalindrome(s string) string {
 	length := len(s)
-	maxLen := 1
-	begin := 0
 	// init dp status
 	dp := make([][]bool, length)
 	for i := 0; i < length; i++ {
@@ -31,5 +29,5 @@ func longestPalindrome(s string) string {
 			}
 		}
 	}
-
+	return ""
 }
