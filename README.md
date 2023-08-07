@@ -7,4 +7,6 @@ The 100 hottest problems on leetcode
 
 ## McGill Practices
 
-This is a test multi-users for git.
+This is a test multi-users for git.\
+$a+b$
+
